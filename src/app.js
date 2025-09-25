@@ -9,7 +9,7 @@ connectDB();
 const app = express();
 app.use(cors({
     origin: 'http://localhost:5500',
-    methods: ["GET"],
+    methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"]
 }));
 app.use(express.json());
